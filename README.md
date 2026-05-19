@@ -1,21 +1,52 @@
-# AlpMark Labs - Public Website
+# AlpMark Labs Website
 
-A modern, animated website for AlpMark Labs - Decision Intelligence Platform for D2C Brands.
+**Decision Intelligence for D2C Brands**
 
-## About
+A modern, animated website built with Next.js 14, React, Framer Motion, and Tailwind CSS.
 
-AlpMark Labs provides trusted decision-intelligence for D2C brand founders, operators, and finance leads. Our platform delivers explainable recommendations, real-time alerts, and scenario simulations—all without ever executing actions in your systems.
+## 🚀 Features
 
-## Tech Stack
+- ⚡ **Next.js 14** with TypeScript
+- 🎨 **Tailwind CSS** for responsive design
+- ✨ **Framer Motion** for smooth animations
+- 📱 **Mobile-first** responsive design
+- 🎯 **Conversion-focused** CTAs
+- ♿ **Accessible** design principles
+- 🚄 **Fast performance**
 
-- Next.js 14+ with TypeScript
-- Tailwind CSS
-- Framer Motion for animations
-- React 18+
+## 📂 Project Structure
 
-## Getting Started
+```
+├── app/
+│   ├── page.tsx              # Landing page
+│   ├── product/page.tsx      # Product showcase
+│   ├── how-it-works/page.tsx # 4-step journey
+│   ├── about/page.tsx        # About company
+│   ├── layout.tsx            # Root layout
+│   └── globals.css           # Global styles
+├── components/
+│   ├── Header.tsx            # Navigation header
+│   └── Footer.tsx            # Footer
+├── package.json
+├── tailwind.config.ts
+├── next.config.js
+└── tsconfig.json
+```
+
+## 🏃 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/Alp-Mark/alpmark-website.git
+cd alpmark-website
+
 # Install dependencies
 npm install
 
@@ -25,24 +56,88 @@ npm run dev
 # Open http://localhost:3000 in your browser
 ```
 
-## Building for Production
+### Build for Production
 
 ```bash
 npm run build
 npm start
 ```
 
-## Project Structure
+## 📄 Pages
 
-- `/app` - Next.js App Router pages
-- `/components` - Reusable React components
-- `/public` - Static assets
-- `/styles` - Global styles and Tailwind config
+### Landing Page (`/`)
+- Animated hero section with logo
+- Outcomes tiles showcasing key benefits
+- Integration logos
+- Trust signals
+- Call-to-action buttons
 
-## Deployment
+### Product Page (`/product`)
+- Feature showcase with 6 key features
+- Each feature includes icon, title, and description
+- Trust markers section
+- Demo CTA
 
-Deploy to Vercel with one click - just connect your GitHub repo at [vercel.com](https://vercel.com)
+### How It Works (`/how-it-works`)
+- 4-step interactive journey
+- Timeline visualization
+- Key principle messaging
+- Free trial CTA
 
----
+### About Page (`/about`)
+- Company mission and values
+- Team positioning
+- Contact CTAs
 
-Built with ❤️ for AlpMark Labs
+## 🎨 Brand Colors
+
+- **Brand Blue**: `#0052CC`
+- **Brand Red**: `#FF3B30`
+- **Brand Cyan**: `#00B4D8`
+
+## 🔧 Customization
+
+### Logo
+Replace the SVG logo in `components/Header.tsx` with your actual logo file.
+
+### Content
+All page content is in the respective `/app/[page]/page.tsx` files.
+
+### Colors
+Update colors in `tailwind.config.ts` or use the predefined brand colors in `globals.css`.
+
+### Animations
+Customize animations using Framer Motion properties in page components.
+
+## 🚢 Deployment
+
+### Deploy to Vercel
+
+```bash
+npm install -g vercel
+vercel
+```
+
+### Deploy to Other Platforms
+
+The project can be deployed to any Node.js-compatible platform:
+- Netlify
+- Railway
+- DigitalOcean
+- AWS Amplify
+- etc.
+
+## 📚 Resources
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Framer Motion Documentation](https://www.framer.com/motion/)
+- [React Documentation](https://react.dev)
+
+## 📞 Support
+
+For questions or support, email hello@alpmarklabs.com
+
+## 📄 License
+
+© 2026 AlpMark Labs. All rights reserved.
